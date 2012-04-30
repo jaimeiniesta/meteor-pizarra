@@ -1,0 +1,3 @@
+.cell { padding: 6px; margin: 0px; cursor: pointer; text-align: center;}
+.cell.true { background-color: black; text-color: black;}
+.cell.false { background-color: #eee; text-color: #eee;}

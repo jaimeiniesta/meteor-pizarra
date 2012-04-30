@@ -1,0 +1,22 @@
+<head>
+  <title>pizarra</title>
+</head>
+
+<body>
+  {{> board}}
+</body>
+
+<template name="board">
+  <div class="board">
+    {{#each cells}}
+      {{> cell}}
+    {{/each}}
+  </div>
+</template>
+
+<template name="cell">
+  <span class="cell {{ active }}">·</span>
+  {{#if at_end_of_row}}
+    <br />
+  {{/if}}
+</template>
